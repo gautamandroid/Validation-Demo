@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingEnd="@dimen/_2dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_80dp"
+    android:orientation="vertical">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_sent_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/send_shapebal"
+            android:padding="@dimen/_10dp"
+            android:text="@string/this_send_message"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_sendtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+          android:layout_gravity="end"
+            android:textSize="10sp"
+            android:layout_below="@id/tv_sent_message"
+            android:text="@string/time" />
+
+
+
+</RelativeLayout>

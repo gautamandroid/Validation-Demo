@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "509451970679",
+    "firebase_url": "https://notification-4350c-default-rtdb.firebaseio.com",
+    "project_id": "notification-4350c",
+    "storage_bucket": "notification-4350c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509451970679:android:928682cf0aeda8fc4d3e72",
+        "android_client_info": {
+          "package_name": "com.gautam.validatonformgrewon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509451970679-k1is31pg8gppcanjbv4cm7quusia3dmp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gautam.validatonformgrewon",
+            "certificate_hash": "30c2df8f666a9ee53fac56a69eea208b499bccee"
+          }
+        },
+        {
+          "client_id": "509451970679-26oq01c5hpvdmjcr4da95usup116jogc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA65xBYtYOk44JXJXiiD6qxJrY2QmkMazc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509451970679-26oq01c5hpvdmjcr4da95usup116jogc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

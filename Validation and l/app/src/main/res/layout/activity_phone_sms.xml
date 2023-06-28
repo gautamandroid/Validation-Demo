@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".PhoneSmsActivity">
+
+    <ImageView
+        android:id="@+id/bt_back"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center_vertical"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/_15dp"
+        android:src="@drawable/left" />
+
+    <LinearLayout
+        android:id="@+id/vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/_120dp"
+            android:layout_height="@dimen/_120dp"
+            android:src="@drawable/smsotpicone" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20dp"
+            android:gravity="center"
+            android:text="Verification"
+            android:textSize="@dimen/_22sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/we_will_send_you_a_one_time_password"
+            android:textSize="@dimen/_15sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/on_your_phone_number"
+            android:textSize="@dimen/_15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/et_phonenumber_backgrund"
+            android:orientation="horizontal"
+            android:padding="@dimen/_2dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countryCode_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_showPhoneCode="true"
+                android:layout_gravity="center" />
+
+             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_enternumber"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="@string/enter_phonen_number"
+                android:maxLength="10"
+                 android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_sendotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/get_otp"
+        android:textSize="@dimen/_16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/_80dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_5dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_recivermessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reciver_chatshapebale"
+            android:padding="@dimen/_10dp"
+            android:text="@string/this_reciver_message"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_recvetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_recivermessage"
+            android:textSize="10sp"
+            android:text="@string/time"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

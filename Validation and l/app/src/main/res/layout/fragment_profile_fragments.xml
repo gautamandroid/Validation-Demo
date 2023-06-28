@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_8dp"
+    android:layout_gravity="center_vertical"
+    tools:context=".fragments.ProfileFragments">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/update_your_profile"
+        android:textColor="@color/newblack"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/up_changeimage"
+        android:layout_width="@dimen/_120dp"
+        android:layout_height="@dimen/_120dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/_32dp"
+        android:src="@color/cardview_dark_background" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sh_upname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sp"
+        android:hint="@string/Enter_name"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_upname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_5dp"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_upzender"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/drop_downfiledee"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_8dp"
+            android:drawablePadding="@dimen/_5dp"
+            android:inputType="none"
+            app:boxStrokeWidth="@dimen/_1dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_updateprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sp"
+        android:layout_marginTop="@dimen/_25sp"
+        android:layout_marginRight="@dimen/_15sp"
+        android:backgroundTint="@color/black"
+        android:text="@string/update"
+        android:paddingVertical="@dimen/_15dp"
+        app:cornerRadius="@dimen/_5dp"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

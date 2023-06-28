@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MessageActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ly_lineyar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/background1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4dp">
+
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="center_vertical"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_15dp"
+            android:src="@drawable/left" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/up_changeimage"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/_2dp"
+            android:src="@drawable/persomimage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_4dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vaholiya_gautam_c"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/android_devloper"
+                android:textSize="@dimen/_12sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botttom_lineayr"
+        android:layout_below="@id/ly_lineyar" />
+
+    <LinearLayout
+        android:id="@+id/botttom_lineayr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@color/kayboard"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_4dp"
+            android:layout_weight="85"
+            android:maxLines="3"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_6dp"
+            android:background="@drawable/message_box_backgrundchat"
+            android:backgroundTint="@color/white"
+            android:hint="@string/type_a_message"
+            android:paddingHorizontal="@dimen/_20dp"
+          />
+
+            <ImageView
+            android:id="@+id/iv_sent"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="center"
+            android:background="?selectableItemBackground"
+            android:backgroundTint="@color/white"
+           android:paddingEnd="@dimen/_4dp"
+            android:src="@drawable/ic_baseline_send_24" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

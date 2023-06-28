@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_2000">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#9B77BF</color>
+    <color name="lightblu">#FF03DAC5</color>
+    <color name="teal_700">#D4E1E3</color>
+    <color name="black">#F6F1F1</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#399E9c</color>
+    <color name="newblack">#4C4CCD</color>
+    <color name="kathay">#B5B5B5</color>
+    <color name="background">#0B4CE4</color>
+    <color name="background1">#03A9F4</color>
+    <color name="teal_200">#C0EFE7</color>
+    <color name="send_chatcolor">#E60707</color>
+    <color name="reciver_color">#FF03DAC5</color>
+    <color name="kayboard">#E7EFEE</color>
+    <color name="splash_bg">#000000</color>
+    <color name="listcolor">#7B51C5</color>
+</resources>

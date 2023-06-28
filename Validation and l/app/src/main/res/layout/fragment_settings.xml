@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_showprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Show profile" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/change_profile" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_changepassworld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/change_password" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fab"
+            android:text="@string/mode_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/margin"
+             />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_currentlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/your_current_location" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/permission" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/_40dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/log_out" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_setgoogleemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_logout"
+            android:layout_margin="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:gravity="center"
+            android:textSize="@dimen/_15sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_viewtyepset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_logout"
+            android:layout_marginTop="@dimen/_20dp"
+            android:gravity="center"
+            android:text="@string/_blank"
+            android:textSize="@dimen/_15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
